@@ -1,0 +1,83 @@
+#banner {
+  background-image: url(./../images/banner_1.png),
+    linear-gradient(#00000099, #00000099);
+  width: 100%;
+  height: 85vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+}
+
+#search-section {
+  width: 60%;
+  height: 40px;
+  position: relative;
+  margin-top: 40px;
+}
+#search-section input {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  padding: 10px 35px;
+}
+#search-section i {
+  position: absolute;
+  top: 12px;
+  left: 10px;
+}
+#search-section button {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 0;
+  font-weight: bolder;
+}
+main {
+  margin-top: 40px;
+  font-weight: bold;
+}
+
+#cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.card {
+  width: 100%;
+}
+
+.card-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.modal-body {
+  height: 70vh;
+}
+.modal-body::-webkit-scrollbar {
+  display: none;
+}
+.modal-body {
+  overflow-x: auto;
+}
+
+@media (max-width: 900px) {
+  #cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  #search-section {
+    width: 98%;
+  }
+  #cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .sign-up {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+}
